@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculator {
+    background: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #6a6a6a; 
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+    width: 310px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.4rem; 
+    color: #555;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    padding-left: 10px;
+}
+
+#display {
+    width: 92%;
+    height: 60px;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    outline: none;
+    box-shadow: inset 3px 3px 1px rgba(0, 0, 0, 0.15);
+    border: 1px solid #6a6a6a; 
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px; 
+    padding: 20px;
+    width: 100%;
+}
+
+button {
+    width: 61px;
+    height: 61px;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.6);
+    color: #333;
+    font-weight: bold;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5); 
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #6a6a6a; 
+}
+
+button:hover {
+    transform: translateY(5px); 
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.number:hover {
+    background: #666; 
+    color: white;
+}
+
+.operator {
+    background: #fec187; 
+    color: white;
+}
+
+.operator:hover {
+    background: #ff9d42;
+}
+
+.del, .reset {
+    background: #FF6B6B; 
+    color: white;
+}
+
+.del:hover, .reset:hover {
+    background: #E63946;
+}
+
+.equals {
+    background: #ffd581; 
+    color: white;
+}
+
+.equals:hover {
+    background: #ffc041;
+}
