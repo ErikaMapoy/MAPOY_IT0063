@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max's Restaurant Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-container">
+                <img src="logo.png" alt="Max's Logo" class="logo">
+                <div class="nav-title">
+                    <h1>Best of Max's Restaurant</h1>
+                    <h2>RESTAURANT GUIDE</h2>
+                    <p>PRODUCED BY: LOCAL MAGAZINE</p>
+                </div>
+                <a href="#" class="menu-btn" onclick="showMenu()">MAIN MENU</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="menu" id="menu-section">
+        <div class="food-item" onclick="showDetails('chicken-full')">
+            <h2>WHOLE FRIED CHICKEN</h2>
+            <img src="WholeChicken.jpg" alt="Whole Fried Chicken">
+            <div class="hover-info">
+                <hr>
+                <p>Golden fried to perfection with secret spices. Sarap-to-the-Bones!</p>
+                <hr>
+                <a href="#" onclick="event.stopPropagation(); showDetails('chicken-full')">More</a>
+            </div>
+        </div>
+
+        <div class="food-item" onclick="showDetails('chicken-half')">
+            <h2>HALF FRIED CHICKEN</h2>
+            <img src="HalfChicken.jpg" alt="Half Fried Chicken">
+            <div class="hover-info">
+                <hr>
+                <p>Classic Filipino Fried Chicken with a crispy twist.</p>
+                <hr>
+                <a href="#" onclick="event.stopPropagation(); showDetails('chicken-half')">More</a>
+            </div>
+        </div>
+
+        <div class="food-item" onclick="showDetails('crispy-pata')">
+            <h2>CRISPY PATA</h2>
+            <img src="Pata.jpg" alt="Crispy Pata">
+            <div class="hover-info">
+                <hr>
+                <p>Deep-fried pork knuckle, crispy outside, tender inside.</p>
+                <hr>
+                <a href="#" onclick="event.stopPropagation(); showDetails('crispy-pata')">More</a>
+            </div>
+        </div>
+
+        <div class="food-item" onclick="showDetails('beef-kare')">
+            <h2>ALL BEEF KARE-KARE</h2>
+            <img src="Karekare.jpg" alt="All Beef Kare-Kare">
+            <div class="hover-info">
+                <hr>
+                <p>Thick peanut sauce with beef chunks and vegetables.</p>
+                <hr>
+                <a href="#" onclick="event.stopPropagation(); showDetails('beef-kare')">More</a>
+            </div>
+        </div>
+
+        <div class="food-item" onclick="showDetails('sizzling-tofu')">
+            <h2>SIZZLING TOFU</h2>
+            <img src="Tofu.jpg" alt="Sizzling Tofu">
+            <div class="hover-info">
+                <hr>
+                <p>Deep fried tofu cubes tossed in creamy sauce with chilies.</p>
+                <hr>
+                <a href="#" onclick="event.stopPropagation(); showDetails('sizzling-tofu')">More</a>
+            </div>
+        </div>
+
+        <div class="food-item" onclick="showDetails('tofu-salad')">
+            <h2>FRESH TOFU SALAD</h2>
+            <img src="Salad.jpg" alt="Garden Fresh Tofu Salad">
+            <div class="hover-info">
+                <hr>
+                <p>A vibrant mix of crisp lettuce, fresh vegetables, and golden tofu cubes.</p>
+                <hr>
+                <a href="#" onclick="event.stopPropagation(); showDetails('tofu-salad')">More</a>
+            </div>
+        </div>
+
+        <div class="food-item" onclick="showDetails('sinigang-na-hipon')">
+            <h2>SINIGANG NA HIPON</h2>
+            <img src="Hipon.jpg" alt="Sinigang na Hipon">
+            <div class="hover-info">
+                <hr>
+                <p>A tangy tamarind soup with shrimp and assorted vegetables. A must-try!</p>
+                <hr>
+                <a href="#" onclick="event.stopPropagation(); showDetails('sinigang na hipon')">More</a>
+            </div>
+        </div>
+
+        <div class="food-item" onclick="showDetails('pancit-bihon')">
+            <h2>PANCIT BIHON</h2>
+            <img src="Pancit.jpg" alt="Pancit Bihon">
+            <div class="hover-info">
+                <hr>
+                <p>Rice noodles sautéed with vegetables, pork, chicken, and shrimp. A traditional favorite.</p>
+                <hr>
+                <a href="#" onclick="event.stopPropagation(); showDetails('pancit-bihon')">More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="details" id="chicken-full">
+        <div class="combination">
+        <div class="pictures">
+            <img src="WholeChicken.jpg" alt="Whole Fried Chicken">
+        </div>
+            <div class="text">
+                <h2>WHOLE FRIED CHICKEN</h2>
+                <p><strong>Category:</strong> Max's Filipino Fried Chicken</p>
+                <p><strong>Location:</strong> Ortigas Center, Pasig, Metro Manila, Philippines</p>
+                <p><strong>Open:</strong> 10AM - 9PM</p>
+                <hr>
+                <p>The iconic Max’s Fried Chicken that made it a Filipino institution! Marinated in secret spices, deep-fried to a golden crisp, and served with banana ketchup and Worcestershire sauce, every bite is Sarap-to-the-Bones. The tender meat and crispy skin make it perfect for family meals or gatherings!</p>
+                <p><strong>Ingredients:</strong> Whole chicken, secret spices, salt, pepper, oil, garlic, onion powder, Worcestershire sauce, banana ketchup.</p>
+                <p><strong>Price:</strong> ₱545.00</p>
+                <hr>
+            </div>
+        </div>
+        </section>
+    
+    <section class="details hidden" id="chicken-half">
+        <div class="combination">
+        <div class="pictures">
+        <img src="HalfChicken.jpg" alt="Half Fried Chicken">
+    </div>
+        <div class="text">
+            <h2>HALF FRIED CHICKEN</h2>
+            <p><strong>Category:</strong> Max's Filipino Fried Chicken</p>
+            <p><strong>Location:</strong> Ortigas Center, Pasig, Metro Manila, Philippines</p>
+            <p><strong>Open:</strong> 10AM - 9PM</p>
+            <hr>
+
+            <p>Enjoy the same Max’s Fried Chicken, now in a half portion! Marinated, deep-fried, and served with banana ketchup and Worcestershire sauce, it has the perfect crunch and juiciness in every bite. Ideal for a solo meal or light sharing, this half portion guarantees big flavors in a smaller size!</p>
+            <p><strong>Ingredients:</strong> Half chicken, secret spices, salt, pepper, oil, garlic, onion powder, Worcestershire sauce, banana ketchup, vinegar.</p>
+            <p><strong>Price:</strong> ₱325.00</p>
+            <hr>
+        </div>
+        </div>
+    </section>
+    
+    <section class="details hidden" id="crispy-pata">
+        <div class="combination">
+        <div class="pictures">
+        <img src="Pata.jpg" alt="Crispy Pata">
+    </div>
+        <div class="text">
+            <h2>CRISPY PATA (CRISPY PORK HOCK)</h2>
+            <p><strong>Category:</strong> Ruby's Favorites</p>
+            <p><strong>Location:</strong> Ortigas Center, Pasig, Metro Manila, Philippines</p>
+            <p><strong>Open:</strong> 10AM - 9PM</p>
+            <hr>
+            <p>A Filipino favorite, this premium pork knuckle is slow-cooked, marinated, and deep-fried to golden perfection. The crispy skin and juicy meat make it irresistible! Served with a savory soy-vinegar sauce and atchara, this hearty dish is best enjoyed with rice and shared among family and friends.</p>
+            <p><strong>Ingredients:</strong> Pork knuckle, garlic, bay leaves, peppercorns, salt, oil, soy sauce, vinegar, sugar, atchara, onion.</p>
+            <p><strong>Price:</strong> ₱899.00</p>
+            <hr>
+        </div>
+        </div>
+    </section>
+    
+    <section class="details hidden" id="beef-kare">
+        <div class="combination">
+        <div class="pictures">
+        <img src="Karekare.jpg" alt="All Beef Kare-Kare">
+    </div>
+        <div class="text">
+
+            <h2>KARE-KARE (BEEF PEANUT STEW)</h2>
+            <p><strong>Category:</strong> Ruby's Favorites</p>
+            <p><strong>Location:</strong> Ortigas Center, Pasig, Metro Manila, Philippines</p>
+            <p><strong>Open:</strong> 10AM - 9PM</p>
+            <hr>
+
+            <p>A rich, creamy peanut stew made with tender beef chunks, fresh vegetables, and annatto oil. Drizzled with ground peanuts and spring onions, this dish is best paired with Max’s signature sautéed bagoong for a savory kick. Good for 3-4 persons, this classic Filipino favorite is a must-try!</p>
+            <p><strong>Ingredients:</strong> Beef chunks, peanut sauce, annatto oil, eggplant, string beans, banana blossoms, garlic, onions, bagoong, salt.</p>
+            <p><strong>Price:</strong> ₱799.00</p>
+            <hr>
+        </div>
+        </div>
+    </section>
+    
+    <section class="details hidden" id="sizzling-tofu">
+        <div class="combination">
+        <div class="pictures">
+        <img src="Tofu.jpg" alt="Sizzling Tofu">
+    </div>
+        <div class="text">
+            <h2>SIZZLING TOFU</h2>
+            <p><strong>Category:</strong> Ruby's Favorites</p>
+            <p><strong>Location:</strong> Ortigas Center, Pasig, Metro Manila, Philippines</p>
+            <p><strong>Open:</strong> 10AM - 9PM</p>
+            <hr>
+
+            <p>A house favorite, this dish features crispy tofu cubes tossed in a creamy, umami-rich sauce and topped with chilies for a slight spicy kick. Served sizzling hot, it’s perfect for sharing as an appetizer or main dish. A great vegetarian-friendly option with bold, satisfying flavors!</p>
+            <p><strong>Ingredients:</strong> Tofu, mayonnaise, oyster sauce, garlic, onions, chili peppers, calamansi, soy sauce, butter, black pepper.</p>
+            <p><strong>Price:</strong> ₱375.00</p>
+            <hr>
+        </div>
+        </div>
+    </section>
+    
+    <section class="details hidden" id="tofu-salad">
+        <div class="combination">
+        <div class="pictures">
+        <img src="Salad.jpg" alt="Garden Fresh Tofu Salad">
+    </div>
+        <div class="text">
+            <h2>GARDEN FRESH TOFU SALAD</h2>
+            <p><strong>Category:</strong> Sides</p>
+            <p><strong>Location:</strong> Ortigas Center, Pasig, Metro Manila, Philippines</p>
+            <p><strong>Open:</strong> 10AM - 9PM</p>
+            <hr>
+
+            <p>A refreshing, healthy salad featuring crisp lettuce, cucumber, tomatoes, shredded carrots, and golden tofu cubes. Topped with parmesan cheese and served with a citrusy-sweet dressing, this light yet flavorful dish is a perfect balance of textures and flavors, making it a guilt-free, vegetarian-friendly choice!</p>
+            <p><strong>Ingredients:</strong> Lettuce, tomatoes, cucumbers, carrots, fried tofu, parmesan cheese, calamansi, honey, vinegar, olive oil.</p>
+            <p><strong>Price:</strong> ₱375.00</p>
+            <hr>
+        </div>
+        </div>
+    </section>
+
+    <section class="details hidden" id="sinigang-na-hipon">
+        <div class="combination">
+        <div class="pictures">
+        <img src="Hipon.jpg" alt="Sinigang na Hipon">
+    </div>
+        <div class="text">
+            <h2>SINIGANG NA HIPON</h2>
+            <p><strong>Category:</strong> Soups</p>
+            <p><strong>Location:</strong> Ortigas Center, Pasig, Metro Manila, Philippines</p>
+            <p><strong>Open:</strong> 10AM - 9PM</p>
+            <hr>
+            <p>A comforting, tangy soup featuring plump shrimp, fresh vegetables, and a tamarind-based broth. This savory-sour dish includes radish, string beans, and kangkong, creating a perfect balance of flavors. Served piping hot, it's a refreshing, heartwarming favorite best enjoyed with steamed rice.</p>
+            <p><strong>Ingredients:</strong> Shrimp, tamarind broth, string beans, radish, eggplant, tomatoes, onions, kangkong, fish sauce, green chili.</p>
+            <p><strong>Price:</strong> ₱565.00</p>
+            <hr>
+        </div>
+        </div>
+    </section>
+    
+    <section class="details hidden" id="pancit-bihon">
+        <div class="combination">
+        <div class="pictures">
+        <img src="Pancit.jpg" alt="Pancit Bihon">
+    </div>
+        <div class="text">
+            <h2>PANCIT BIHON (RICE NOODLES)</h2>
+            <p><strong>Category:</strong> Soups</p>
+            <p><strong>Location:</strong> Ortigas Center, Pasig, Metro Manila, Philippines</p>
+            <p><strong>Open:</strong> 10AM - 9PM</p>
+            <hr>
+            <p>A classic Filipino noodle dish made with stir-fried rice noodles, tender meat, shrimp, and vegetables. Infused with garlic, soy sauce, and seasonings, this savory, flavorful favorite is perfect for celebrations or everyday meals. Served with calamansi for a zesty kick, this dish is comfort food at its best!</p>
+            <p><strong>Ingredients:</strong> Bihon noodles, chicken, pork, shrimp, cabbage, carrots, green beans, garlic, onions, soy sauce, calamansi.</p>
+            <p><strong>Price:</strong> ₱455.00</p>
+            <hr>
+        </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
